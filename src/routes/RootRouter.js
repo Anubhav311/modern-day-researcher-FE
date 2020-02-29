@@ -17,7 +17,7 @@ function RootRouter() {
   return (
     <>
       <Route exact path="/" render={() => <Redirect to="/home" />} />
-      <PrivateRoute path="/home" component={Home} />
+      <Route path="/home" component={Home} />
       <PrivateRoute path="/friends" component={Friends} />
       <Route path="/login" render={() => <Redirect to="/users/signin" />} />
       <Route path="/signin" render={() => <Redirect to="/users/signin" />} />
